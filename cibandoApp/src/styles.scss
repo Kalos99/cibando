@@ -10,5 +10,8 @@ nav {
   margin-bottom: 20px;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+.titolo {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 26px;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.card-image{
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.btn-primary {
+  background-color: #8e210b!important;
+  border: none!important;
+  display: block;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    width: 23%;
+    display: block;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 25px;
+  }
+
+}

@@ -1,33 +1,3 @@
-<header>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Cibando</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="pi pi-home"></i> Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="pi pi-book"></i> Ricette</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="pi pi-phone"></i> Contatti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"><i class="pi pi-user"></i> Registrati</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-<app-carousel></app-carousel>
-<h2 (click)="onEvidenziato()" style="cursor: pointer;">Benvenuti in Cibando!</h2>
-<p [ngClass]="evidenziato ? 'testoEvidenziato' : '' ">
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-</p>
+<app-header></app-header>
 
 <router-outlet></router-outlet>
