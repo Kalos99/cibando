@@ -1,0 +1,26 @@
+export const USERS: any[] = [
+  {
+    _id: 1,
+    name :"Danilo",
+    email: "danilo@gmail.com",
+    password: "danilo",
+    role: 'admin',
+    note: "questo utente è l'amministratore"
+  },
+  {
+    _id: 2,
+    name :"Marco",
+    email: "marco@gmail.com",
+    password: "marco",
+    role: 'user',
+    note: "questo è un utente semplice"
+  },
+  {
+    _id: 3,
+    name :"Sara",
+    email: "sara@gmail.com",
+    password: "sara",
+    role: 'user',
+    note: "questo è un utente semplice"
+  },
+];
