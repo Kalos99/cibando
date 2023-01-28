@@ -8,7 +8,10 @@ import { Recipe } from 'src/app/models/recipe.model';
   styleUrls: ['./recipes-list.component.scss']
 })
 export class RecipesListComponent implements OnInit{
+
   ricette: Recipe[];
+
+  messaggioRicevuto: string;
 
   constructor(private recipeService: RecipeService){ }
 
@@ -21,5 +24,13 @@ export class RecipesListComponent implements OnInit{
         console.log(errore);
       }
     })
+  }
+
+  riceviMsg(e: any){
+    if(e === this.messaggioRicevuto){
+      this.messaggioRicevuto = '';
+    } else {
+      this.messaggioRicevuto = e;
+    }
   }
 }
