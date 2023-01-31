@@ -1,3 +1,24 @@
 .testoEvidenziato {
   background-color: yellow;
 }
+
+div#contenitore-dati-utente {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: #000000cd;
+  z-index: 10;
+}
+
+.dati-utente {
+  background: white;
+  width: 50%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 20px;
+  border: 5px solid;
+  margin-top: 15%;
+}

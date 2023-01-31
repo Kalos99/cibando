@@ -104,8 +104,11 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4c" class="form-control" name="password" formControlName="password"/>
+                      <!-- <input type="password" id="form3Example4c" class="form-control" name="password" formControlName="password"/> -->
+                      <p-password [toggleMask]="true" formControlName="password" strongRegex="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$"></p-password>
                       <label class="form-label" for="form3Example4c">Password</label>
+                      <p class="help is-danger" *ngIf="form.controls.password.hasError('required') && form.get('password').touched">Il campo password è obbligatorio</p>
+                      <p class="help is-danger" *ngIf="form.controls['password'].hasError('pattern')">Il campo password deve contenere 1 minuscola, 1 maiuscola, 1 numero, 1 carattere speciale, min 8 caratteri e max 16 caratteri</p>
                     </div>
                   </div>
 
@@ -114,6 +117,7 @@
                     <div class="form-outline flex-fill mb-0">
                       <input type="password" id="form3Example4cd" class="form-control" name="repeatPassword" formControlName="ripetiPassword"/>
                       <label class="form-label" for="form3Example4cd">Ripeti password</label>
+                      <p class="help is-danger" *ngIf="form.getError('diversa') && form.get('ripetiPassword').touched">La password inserita non combacia</p>
                     </div>
                   </div>
 
